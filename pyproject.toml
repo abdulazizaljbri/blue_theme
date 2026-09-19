@@ -1,9 +1,9 @@
 [project]
 name = "blue_theme"
 authors = [
-    { name = "a", email = "a@a.a"}
+    { name = "abdulaziz", email = "a@a.c"}
 ]
-description = "a"
+description = "blue"
 requires-python = ">=3.10"
 readme = "README.md"
 dynamic = ["version"]

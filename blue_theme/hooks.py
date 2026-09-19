@@ -1,21 +1,35 @@
+from . import __version__ as app_version
+
 app_name = "blue_theme"
 app_title = "Blue Theme"
-app_publisher = "a"
-app_description = "a"
-app_email = "a@a.a"
-app_license = "mit"
-# required_apps = []
+app_publisher = "abdulaziz algbri"
+app_description = "blue"
+app_email = "aljbriabdulaziz@gmail.com"
+app_license = "MIT"
+app_logo_url = "/assets/blue_theme/images/splash.png"
 
 # Includes in <head>
 # ------------------
 
+app_include_css = ["/assets/blue_theme/css/fonts.css","blue_theme.bundle.css","/assets/blue_theme/css/redmond.calendars.picker.css"]
+web_include_css = ["/assets/blue_theme/css/fonts.css","/assets/blue_theme/css/blue_theme_web.bundle.css"]
+# app_include_js=["/assets/blue_theme/js/blue_theme.bundle.js","/assets/blue_theme/js/tinymce/tinymce.js"]
+app_include_js=["blue_theme.bundle.js","/assets/blue_theme/js/tinymce/tinymce.js"]
+
+
+
+
+website_context = {
+	"favicon": "/assets/blue_theme/images/splash.png",
+	# "splash_image": "/assets/blue_theme/images/splash.png",
+}
 # include js, css files in header of desk.html
 # app_include_css = "/assets/blue_theme/css/blue_theme.css"
 # app_include_js = "/assets/blue_theme/js/blue_theme.js"
 
 # include js, css files in header of web template
 # web_include_css = "/assets/blue_theme/css/blue_theme.css"
-# web_include_js = "/assets/blue_theme/js/blue_theme.js"
+web_include_js = "editorjs.bundle.js"
 
 # include custom scss in every website theme (without file extension ".scss")
 # website_theme_scss = "blue_theme/public/scss/website"
@@ -33,11 +47,6 @@ app_license = "mit"
 # doctype_tree_js = {"doctype" : "public/js/doctype_tree.js"}
 # doctype_calendar_js = {"doctype" : "public/js/doctype_calendar.js"}
 
-# Svg Icons
-# ------------------
-# include app icons in desk
-# app_include_icons = "blue_theme/public/icons.svg"
-
 # Home Pages
 # ----------
 
@@ -46,7 +55,7 @@ app_license = "mit"
 
 # website user home page (by Role)
 # role_home_page = {
-# 	"Role": "home_page"
+#	"Role": "home_page"
 # }
 
 # Generators
@@ -60,8 +69,8 @@ app_license = "mit"
 
 # add methods and filters to jinja environment
 # jinja = {
-# 	"methods": "blue_theme.utils.jinja_methods",
-# 	"filters": "blue_theme.utils.jinja_filters"
+#	"methods": "blue_theme.utils.jinja_methods",
+#	"filters": "blue_theme.utils.jinja_filters"
 # }
 
 # Installation
@@ -76,22 +85,6 @@ app_license = "mit"
 # before_uninstall = "blue_theme.uninstall.before_uninstall"
 # after_uninstall = "blue_theme.uninstall.after_uninstall"
 
-# Integration Setup
-# ------------------
-# To set up dependencies/integrations with other apps
-# Name of the app being installed is passed as an argument
-
-# before_app_install = "blue_theme.utils.before_app_install"
-# after_app_install = "blue_theme.utils.after_app_install"
-
-# Integration Cleanup
-# -------------------
-# To clean up dependencies/integrations with other apps
-# Name of the app being uninstalled is passed as an argument
-
-# before_app_uninstall = "blue_theme.utils.before_app_uninstall"
-# after_app_uninstall = "blue_theme.utils.after_app_uninstall"
-
 # Desk Notifications
 # ------------------
 # See frappe.core.notifications.get_notification_config
@@ -103,11 +96,11 @@ app_license = "mit"
 # Permissions evaluated in scripted ways
 
 # permission_query_conditions = {
-# 	"Event": "frappe.desk.doctype.event.event.get_permission_query_conditions",
+#	"Event": "frappe.desk.doctype.event.event.get_permission_query_conditions",
 # }
 #
 # has_permission = {
-# 	"Event": "frappe.desk.doctype.event.event.has_permission",
+#	"Event": "frappe.desk.doctype.event.event.has_permission",
 # }
 
 # DocType Class
@@ -115,7 +108,7 @@ app_license = "mit"
 # Override standard doctype classes
 
 # override_doctype_class = {
-# 	"ToDo": "custom_app.overrides.CustomToDo"
+#	"ToDo": "custom_app.overrides.CustomToDo"
 # }
 
 # Document Events
@@ -123,32 +116,32 @@ app_license = "mit"
 # Hook on document methods and events
 
 # doc_events = {
-# 	"*": {
-# 		"on_update": "method",
-# 		"on_cancel": "method",
-# 		"on_trash": "method"
-# 	}
+#	"*": {
+#		"on_update": "method",
+#		"on_cancel": "method",
+#		"on_trash": "method"
+#	}
 # }
 
 # Scheduled Tasks
 # ---------------
 
 # scheduler_events = {
-# 	"all": [
-# 		"blue_theme.tasks.all"
-# 	],
-# 	"daily": [
-# 		"blue_theme.tasks.daily"
-# 	],
-# 	"hourly": [
-# 		"blue_theme.tasks.hourly"
-# 	],
-# 	"weekly": [
-# 		"blue_theme.tasks.weekly"
-# 	],
-# 	"monthly": [
-# 		"blue_theme.tasks.monthly"
-# 	],
+#	"all": [
+#		"blue_theme.tasks.all"
+#	],
+#	"daily": [
+#		"blue_theme.tasks.daily"
+#	],
+#	"hourly": [
+#		"blue_theme.tasks.hourly"
+#	],
+#	"weekly": [
+#		"blue_theme.tasks.weekly"
+#	],
+#	"monthly": [
+#		"blue_theme.tasks.monthly"
+#	],
 # }
 
 # Testing
@@ -160,14 +153,14 @@ app_license = "mit"
 # ------------------------------
 #
 # override_whitelisted_methods = {
-# 	"frappe.desk.doctype.event.event.get_events": "blue_theme.event.get_events"
+#	"frappe.desk.doctype.event.event.get_events": "blue_theme.event.get_events"
 # }
 #
 # each overriding function accepts a `data` argument;
 # generated from the base implementation of the doctype dashboard,
 # along with any modifications made in other Frappe apps
 # override_doctype_dashboards = {
-# 	"Task": "blue_theme.task.get_dashboard_data"
+#	"Task": "blue_theme.task.get_dashboard_data"
 # }
 
 # exempt linked doctypes from being automatically cancelled
@@ -193,37 +186,29 @@ app_license = "mit"
 # --------------------
 
 # user_data_fields = [
-# 	{
-# 		"doctype": "{doctype_1}",
-# 		"filter_by": "{filter_by}",
-# 		"redact_fields": ["{field_1}", "{field_2}"],
-# 		"partial": 1,
-# 	},
-# 	{
-# 		"doctype": "{doctype_2}",
-# 		"filter_by": "{filter_by}",
-# 		"partial": 1,
-# 	},
-# 	{
-# 		"doctype": "{doctype_3}",
-# 		"strict": False,
-# 	},
-# 	{
-# 		"doctype": "{doctype_4}"
-# 	}
+#	{
+#		"doctype": "{doctype_1}",
+#		"filter_by": "{filter_by}",
+#		"redact_fields": ["{field_1}", "{field_2}"],
+#		"partial": 1,
+#	},
+#	{
+#		"doctype": "{doctype_2}",
+#		"filter_by": "{filter_by}",
+#		"partial": 1,
+#	},
+#	{
+#		"doctype": "{doctype_3}",
+#		"strict": False,
+#	},
+#	{
+#		"doctype": "{doctype_4}"
+#	}
 # ]
 
 # Authentication and authorization
 # --------------------------------
 
 # auth_hooks = [
-# 	"blue_theme.auth.validate"
+#	"blue_theme.auth.validate"
 # ]
-
-# Automatically update python controller files with type annotations for this app.
-# export_python_type_annotations = True
-
-# default_log_clearing_doctypes = {
-# 	"Logging DocType Name": 30  # days to retain logs
-# }
-

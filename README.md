@@ -1,6 +1,6 @@
 ## Blue Theme
 
-a
+blue
 
 #### License
 

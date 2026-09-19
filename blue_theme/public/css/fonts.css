@@ -1,0 +1,110 @@
+   /* @font-face {  
+    font-family: 'DroidKufi-Regular';
+    src: url('../fonts/DroidKufi-Regular.eot'); 
+    src: url('../fonts/DroidKufi-Regular.eot') format('embedded-opentype'),
+     url('../fonts/DroidKufi-Regular.woff2') format('woff2'), 
+     url('../fonts/DroidKufi-Regular.woff') format('woff'), 
+     url('../fonts/DroidKufi-Regular.ttf') format('truetype'), 
+     url('../fonts/DroidKufi-Regular.svg#TrajanProBold') format('svg'); 
+    }
+    @font-face { 
+    font-family: 'DroidKufi-Bold';
+    src: url('../fonts/DroidKufi-Bold.eot'); 
+    src: url('../fonts/DroidKufi-Bold.eot') format('embedded-opentype'),
+     url('../fonts/DroidKufi-Bold.woff2') format('woff2'), 
+     url('../fonts/DroidKufi-Bold.woff') format('woff'), 
+     url('../fonts/DroidKufi-Bold.ttf') format('truetype'), 
+     url('../fonts/DroidKufi-Bold.svg#TrajanProBold') format('svg'); 
+    } */
+
+
+    @font-face {
+      font-family: 'DroidKufi-Regular';
+      src: url('/assets/fonts/DroidKufi-Regular.eot');
+      src: url('/assets/fonts/DroidKufi-Regular.eot') format('embedded-opentype'), url('/assets/fonts/DroidKufi-Regular.woff2') format('woff2'), url('/assets/fonts/DroidKufi-Regular.woff') format('woff'), url('/assets/fonts/DroidKufi-Regular.ttf') format('truetype'), url('/assets/fonts/DroidKufi-Regular.svg#TrajanProBold') format('svg');
+  }
+  
+  @font-face {
+      font-family: 'DroidKufi-Bold';
+      src: url('/assets/fonts/DroidKufi-Bold.eot');
+      src: url('/assets/fonts/DroidKufi-Bold.eot') format('embedded-opentype'), url('/assets/fonts/DroidKufi-Bold.woff2') format('woff2'), url('/assets/fonts/DroidKufi-Bold.woff') format('woff'), url('/assets/fonts/DroidKufi-Bold.ttf') format('truetype'), url('/assets/fonts/DroidKufi-Bold.svg#TrajanProBold') format('svg');
+  }
+  
+  @font-face {
+      font-family: Cairo;
+      font-style: normal;
+      font-weight: 300;
+      src: url(/assets/fonts/cairo-v9-latin_arabic-300.eot);
+      src: local(""),url(/assets/fonts/cairo-v9-latin_arabic-300.eot?#iefix) format("embedded-opentype"),url(/assets/fonts/cairo-v9-latin_arabic-300.woff2) format("woff2"),url(/assets/fonts/cairo-v9-latin_arabic-300.woff) format("woff"),url(/assets/fonts/cairo-v9-latin_arabic-300.ttf) format("truetype"),url(/assets/fonts/cairo-v9-latin_arabic-300.svg#Cairo) format("svg")
+  }
+  
+  @font-face {
+      font-family: Cairo;
+      font-style: normal;
+      font-weight: 400;
+      src: url(/assets/fonts/cairo-v9-latin_arabic-regular.eot);
+      src: local(""),url(/assets/fonts/cairo-v9-latin_arabic-regular.eot?#iefix) format("embedded-opentype"),url(/assets/fonts/cairo-v9-latin_arabic-regular.woff2) format("woff2"),url(/assets/fonts/cairo-v9-latin_arabic-regular.woff) format("woff"),url(/assets/fonts/cairo-v9-latin_arabic-regular.ttf) format("truetype"),url(/assets/fonts/cairo-v9-latin_arabic-regular.svg#Cairo) format("svg")
+  }
+  
+  @font-face {
+      font-family: Cairo;
+      font-style: normal;
+      font-weight: 600;
+      src: url(/assets/fonts/cairo-v9-latin_arabic-600.eot);
+      src: local(""),url(/assets/fonts/cairo-v9-latin_arabic-600.eot?#iefix) format("embedded-opentype"),url(/assets/fonts/cairo-v9-latin_arabic-600.woff2) format("woff2"),url(/assets/fonts/cairo-v9-latin_arabic-600.woff) format("woff"),url(/assets/fonts/cairo-v9-latin_arabic-600.ttf) format("truetype"),url(/assets/fonts/cairo-v9-latin_arabic-600.svg#Cairo) format("svg")
+  }
+  
+  @font-face {
+      font-family: Cairo;
+      font-style: normal;
+      font-weight: 700;
+      src: url(/assets/fonts/cairo-v9-latin_arabic-700.eot);
+      src: local(""),url(/assets/fonts/cairo-v9-latin_arabic-700.eot?#iefix) format("embedded-opentype"),url(/assets/fonts/cairo-v9-latin_arabic-700.woff2) format("woff2"),url(/assets/fonts/cairo-v9-latin_arabic-700.woff) format("woff"),url(/assets/fonts/cairo-v9-latin_arabic-700.ttf) format("truetype"),url(/assets/fonts/cairo-v9-latin_arabic-700.svg#Cairo) format("svg")
+  }
+  
+  * {
+      font-family: 'DroidKufi-Regular',Cairo;
+  }
+
+    *{
+      font-family: 'DroidKufi-Regular' ,Cairo, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+/* 
+     @font-face { 
+        font-family: 'DroidKufi-Regular';
+        src: url('/assets/blue_theme/fonts/DroidKufi-Regular.eot'); 
+        src: url('/assets/css/DroidKufi-Regular.eot') format('embedded-opentype'),
+         url('/assets/blue_theme/fonts/DroidKufi-Regular.woff2') format('woff2'), 
+         url('/assets/blue_theme/fonts/DroidKufi-Regular.woff') format('woff'), 
+         url('/assets/blue_theme/fonts/DroidKufi-Regular.ttf') format('truetype'), 
+         url('/assets/blue_theme/fonts/DroidKufi-Regular.svg#TrajanProBold') format('svg'); 
+        }
+        @font-face { 
+        font-family: 'DroidKufi-Bold';
+        src: url('/assets/blue_theme/fonts/DroidKufi-Bold.eot'); 
+        src: url('/assets/blue_theme/fonts/DroidKufi-Bold.eot') format('embedded-opentype'),
+         url('/assets/blue_theme/fonts/DroidKufi-Bold.woff2') format('woff2'), 
+         url('/assets/blue_theme/fonts/DroidKufi-Bold.woff') format('woff'), 
+         url('/assets/blue_theme/fonts/DroidKufi-Bold.ttf') format('truetype'), 
+         url('/assets/blue_theme/fonts/DroidKufi-Bold.svg#TrajanProBold') format('svg'); 
+        }  */
+
+  /*  @font-face { 
+        font-family: 'DroidKufi-Regular';
+        src: url('/assets/blue_theme/dist/fonts/DroidKufi-Regular.eot'); 
+        src: url('/assets/css/DroidKufi-Regular.eot') format('embedded-opentype'),
+         url('/assets/blue_theme/dist/fonts/DroidKufi-Regular.woff2') format('woff2'), 
+         url('/assets/blue_theme/dist/fonts/DroidKufi-Regular.woff') format('woff'), 
+         url('/assets/blue_theme/dist/fonts/DroidKufi-Regular.ttf') format('truetype'), 
+         url('/assets/blue_theme/dist/fonts/DroidKufi-Regular.svg#TrajanProBold') format('svg'); 
+        }
+        @font-face { 
+        font-family: 'DroidKufi-Bold';
+        src: url('/assets/blue_theme/dist/fonts/DroidKufi-Bold.eot'); 
+        src: url('/assets/blue_theme/dist/fonts/DroidKufi-Bold.eot') format('embedded-opentype'),
+         url('/assets/blue_theme/dist/fonts/DroidKufi-Bold.woff2') format('woff2'), 
+         url('/assets/blue_theme/dist/fonts/DroidKufi-Bold.woff') format('woff'), 
+         url('/assets/blue_theme/dist/fonts/DroidKufi-Bold.ttf') format('truetype'), 
+         url('/assets/blue_theme/dist/fonts/DroidKufi-Bold.svg#TrajanProBold') format('svg'); 
+        } */
